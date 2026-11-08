@@ -1,4 +1,4 @@
-# parkinsons-screening
+# Parkinson's Screening
 
 Leakage-aware evaluation of Parkinson's screening models, with a voice module, a spiral-drawing module, a FastAPI backend and a browser demo.
 
