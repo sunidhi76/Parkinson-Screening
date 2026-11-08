@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    ports: ["8000:8000"]
+    volumes:
+      - ./models:/app/models:ro   # trained artifacts; run `make train` on the host first (or train inside the container)

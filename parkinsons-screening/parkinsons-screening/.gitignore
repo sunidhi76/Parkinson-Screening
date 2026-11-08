@@ -1,0 +1,9 @@
+data/parkinsons.data
+data/drawings/*/*/*
+data/drawings_synthetic/
+data/drawings/subjects.csv
+__pycache__/
+.venv/
+*.pyc
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,3 @@
+source_dataset,frac_parkinson,n_images,note
+synA,0.5,56,"SYNTHETIC: pipeline validation only, not scientific results."
+synB,0.5,56,"SYNTHETIC: pipeline validation only, not scientific results."

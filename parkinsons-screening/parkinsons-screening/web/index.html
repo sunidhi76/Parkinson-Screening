@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parkinson's screening support — demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="banner" role="alert"><strong>Screening support, not diagnosis.</strong>
+    Nothing here is a medical diagnosis. Talk to a qualified clinician about any health concern.</div>
+  <header><h1>Parkinson's screening support</h1>
+    <p class="sub">Two <em>independent</em> modules. They are deliberately <strong>not combined</strong>: voice and drawing data come from
+    different people, so a fused score would be fabricated. Audio and images are processed in memory and never stored.</p>
+    <p id="health" class="muted">Checking server…</p></header>
+  <main>
+    <section class="card" id="voice">
+      <h2>1 · Voice module</h2>
+      <h3>A. Paste a UCI-format feature row <span class="tag ok">real model</span></h3>
+      <p class="muted">22 pre-computed UCI features (optionally preceded by a name and containing the UCI <code>status</code> column, which is ignored).</p>
+      <textarea id="row" rows="4" placeholder="119.992,157.302,74.997,0.00784,0.00007,0.0037,0.00554,0.01109,0.04374,0.426,0.02182,0.0313,0.02971,0.06545,0.02211,21.033,0.414783,0.815285,-4.813031,0.266482,2.301442,0.284654"></textarea>
+      <div class="row"><button id="exampleRow" class="secondary">Insert an example row (a TRAINING row)</button>
+        <label>model <select id="vmodel"><option value="">default</option><option>logreg</option><option>svm_rbf</option><option>random_forest</option><option>xgboost</option></select></label>
+        <button id="scoreRow">Score row</button></div>
+      <div id="rowOut" class="out"></div>
+      <hr>
+      <h3>B. Record or upload a sustained vowel <span class="tag warn">unvalidated demo</span></h3>
+      <p class="muted">Features are approximated <em>in your browser</em> and are not computed like the UCI data. Any score is an
+        <strong>unvalidated demo, not comparable to the training data.</strong></p>
+      <div class="row"><button id="rec">● Record 5 s (say “aaah”)</button><input type="file" id="audioFile" accept="audio/*"></div>
+      <div id="audioOut" class="out"></div>
+    </section>
+    <section class="card" id="drawing">
+      <h2>2 · Spiral-drawing module</h2>
+      <p class="muted">Upload a photo/scan of a spiral on paper, or draw one below. A drawing made with a mouse or finger on screen differs from the
+        paper/tablet data used for training, so treat on-screen drawings as a demo only.</p>
+      <div class="row"><input type="file" id="imgFile" accept="image/*"><button id="scoreImg">Score uploaded image</button></div>
+      <canvas id="pad" width="360" height="360"></canvas>
+      <div class="row"><button id="clearPad" class="secondary">Clear</button><button id="scorePad">Score drawing</button></div>
+      <div id="drawOut" class="out"></div>
+    </section>
+  </main>
+  <footer class="muted">Limitations: small datasets, subject-wise performance with wide uncertainty, no external validation. See the README.</footer>
+  <script src="audio_features.js"></script><script src="app.js"></script>
+</body></html>

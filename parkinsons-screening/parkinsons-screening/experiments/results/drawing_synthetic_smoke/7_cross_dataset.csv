@@ -1,0 +1,7 @@
+model,train_on,test_on,within_dataset_auc,cross_dataset_auc,cross_auc_ci95,auc_drop,within_dataset_bal_acc,cross_dataset_bal_acc,cross_bal_acc_ci95,bal_acc_drop,note
+handcrafted_rf,synB,synA,0.9306972789115647,0.9336734693877552,"0.934 [0.803, 1.000]",-0.0029761904761904656,0.9047619047619048,0.8392857142857143,"0.839 [0.750, 0.930]",0.06547619047619047,"SYNTHETIC: pipeline validation only, not scientific results."
+handcrafted_rf,synA,synB,0.9689625850340137,0.9948979591836735,"0.995 [0.978, 1.000]",-0.02593537414965985,0.9226190476190476,0.8928571428571428,"0.893 [0.792, 0.981]",0.029761904761904767,"SYNTHETIC: pipeline validation only, not scientific results."
+cnn_aug,synB,synA,0.6186224489795918,0.9821428571428572,"0.982 [0.930, 1.000]",-0.36352040816326536,0.5,0.7142857142857143,"0.714 [0.611, 0.823]",-0.2142857142857143,"SYNTHETIC: pipeline validation only, not scientific results."
+cnn_aug,synA,synB,0.6679421768707483,1.0,"1.000 [1.000, 1.000]",-0.3320578231292517,0.5357142857142857,0.9821428571428572,"0.982 [0.942, 1.000]",-0.4464285714285715,"SYNTHETIC: pipeline validation only, not scientific results."
+cnn_noaug,synB,synA,0.6896258503401361,0.903061224489796,"0.903 [0.779, 0.991]",-0.21343537414965985,0.5,0.5,"0.500 [0.500, 0.500]",0.0,"SYNTHETIC: pipeline validation only, not scientific results."
+cnn_noaug,synA,synB,0.789965986394558,1.0,"1.000 [1.000, 1.000]",-0.21003401360544205,0.5416666666666666,0.5,"0.500 [0.500, 0.500]",0.04166666666666663,"SYNTHETIC: pipeline validation only, not scientific results."

@@ -1,0 +1,3 @@
+source,stroke_mass,stroke_lift,border_mass,border_lift,paper_mass,paper_lift,verdict,note
+synA,0.7628180640084403,1.2059244102913627,0.0336672609139766,0.16015484105156416,0.20351468878132956,1.2880639944162249,attention concentrated on stroke,"SYNTHETIC: pipeline validation only, not scientific results."
+synB,0.757353687286377,1.176908661431574,0.04474795274436474,0.22887667170741807,0.19789836294949054,1.2313335915044212,attention concentrated on stroke,"SYNTHETIC: pipeline validation only, not scientific results."

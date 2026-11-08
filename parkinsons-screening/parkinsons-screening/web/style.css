@@ -1,0 +1,16 @@
+:root{--bg:#0f1318;--fg:#e8edf2;--mut:#93a1b1;--card:#171d25;--line:#2a3441;--acc:#4da3ff;--ok:#3ecf8e;--warn:#f5a524;--bad:#ff6b6b}
+@media (prefers-color-scheme: light){:root{--bg:#f6f8fa;--fg:#16202a;--mut:#5b6b7b;--card:#fff;--line:#d9e0e7}}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,sans-serif;background:var(--bg);color:var(--fg)}
+.banner{background:#7a1f1f;color:#fff;padding:.6rem 1rem;text-align:center;position:sticky;top:0;z-index:5}
+header,main,footer{max-width:960px;margin:0 auto;padding:0 1rem}header{padding-top:1rem}
+.sub{color:var(--mut)}.muted{color:var(--mut);font-size:.9rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0}
+h2{margin-top:0}h3{margin-bottom:.3rem}textarea,select,input[type=file]{width:100%;background:transparent;color:inherit;border:1px solid var(--line);border-radius:8px;padding:.5rem}
+select{width:auto}button{background:var(--acc);color:#fff;border:0;border-radius:8px;padding:.5rem .9rem;cursor:pointer;font-weight:600}
+button.secondary{background:transparent;color:var(--fg);border:1px solid var(--line)}button:disabled{opacity:.45;cursor:not-allowed}
+.row{display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin:.6rem 0}
+.out{margin-top:.6rem}.tag{font-size:.7rem;padding:.1rem .45rem;border-radius:99px;vertical-align:middle}.tag.ok{background:var(--ok);color:#00230f}.tag.warn{background:var(--warn);color:#2a1a00}
+table{border-collapse:collapse;width:100%;font-size:.88rem}td,th{border-bottom:1px solid var(--line);padding:.25rem .4rem;text-align:left}
+.res{border:1px solid var(--line);border-radius:10px;padding:.7rem;margin-top:.5rem}.band-low{color:var(--ok)}.band-uncertain{color:var(--warn)}.band-elevated{color:var(--bad)}
+.warnbox{background:rgba(245,165,36,.12);border-left:4px solid var(--warn);padding:.4rem .7rem;margin:.4rem 0}.errbox{background:rgba(255,107,107,.12);border-left:4px solid var(--bad);padding:.4rem .7rem;margin:.4rem 0}
+canvas{background:#fff;border:1px solid var(--line);border-radius:8px;touch-action:none;max-width:100%}hr{border:0;border-top:1px solid var(--line);margin:1.2rem 0}footer{padding:1rem 1rem 2rem}

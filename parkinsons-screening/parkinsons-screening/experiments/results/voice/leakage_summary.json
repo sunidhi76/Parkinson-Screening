@@ -1,0 +1,44 @@
+{
+  "voice_data": {
+    "n_recordings": 195,
+    "n_subjects": 32,
+    "subjects_per_class": {
+      "0": 8,
+      "1": 24
+    },
+    "recordings_per_class": {
+      "0": 48,
+      "1": 147
+    },
+    "recordings_per_subject_min_max": [
+      6,
+      7
+    ],
+    "subjects_with_mixed_labels": 0
+  },
+  "leaked_subjects_per_random_fold": [
+    25,
+    26,
+    23,
+    26,
+    23
+  ],
+  "gap_random_minus_group": {
+    "logreg": {
+      "balanced_accuracy": 0.11809098639455773,
+      "roc_auc": 0.13224206349206358
+    },
+    "svm_rbf": {
+      "balanced_accuracy": 0.17221513605442185,
+      "roc_auc": 0.22620464852607725
+    },
+    "random_forest": {
+      "balanced_accuracy": 0.20567602040816313,
+      "roc_auc": 0.17365362811791374
+    },
+    "xgboost": {
+      "balanced_accuracy": 0.18401360544217693,
+      "roc_auc": 0.17132936507936503
+    }
+  }
+}

@@ -1,0 +1,4 @@
+view,predict_SOURCE_balanced_acc,chance_source,predict_LABEL_balanced_acc,predict_LABEL_auc,note
+"trivial_metadata (size, bg tone, colour)",1.0,0.5,0.6607142857142857,0.7621173469387755,"SYNTHETIC: pipeline validation only, not scientific results."
+raw_thumbnail_16x16,1.0,0.5,0.5654761904761905,0.6142113095238094,"SYNTHETIC: pipeline validation only, not scientific results."
+handcrafted_spiral_features,0.9880952380952381,0.5,0.9196428571428572,0.9568452380952381,"SYNTHETIC: pipeline validation only, not scientific results."

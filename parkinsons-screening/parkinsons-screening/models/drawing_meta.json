@@ -1,0 +1,30 @@
+{
+  "trained_on": "synthetic",
+  "n_images": 112,
+  "n_subjects": 56,
+  "sources": [
+    "synA",
+    "synB"
+  ],
+  "feature_names": [
+    "ink_fraction",
+    "stroke_width",
+    "n_components",
+    "largest_comp_frac",
+    "n_turns",
+    "centerline_ok",
+    "radial_dev_rms",
+    "radial_dev_mad",
+    "tremor_dom_freq",
+    "tremor_band_frac",
+    "low_band_frac",
+    "spec_peakiness",
+    "spacing_cv",
+    "curv_rough",
+    "curv_jerk",
+    "dev_zero_cross_rate",
+    "length_excess"
+  ],
+  "warning": "SYNTHETIC: pipeline validation only, not scientific results. This model was trained on synthetic spirals only; its outputs are meaningless for real drawings.",
+  "disclaimer": "Screening support, not diagnosis. This output is not a medical diagnosis and must not replace evaluation by a qualified clinician."
+}

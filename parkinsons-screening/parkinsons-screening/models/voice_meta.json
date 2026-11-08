@@ -1,0 +1,174 @@
+{
+  "disclaimer": "Screening support, not diagnosis. This output is not a medical diagnosis and must not replace evaluation by a qualified clinician.",
+  "default_model": "xgboost",
+  "default_model_choice": "highest subject-wise-CV ROC-AUC (selected on the same CV; mildly optimistic)",
+  "n_subjects": 32,
+  "n_recordings": 195,
+  "feature_order": [
+    "MDVP:Fo(Hz)",
+    "MDVP:Fhi(Hz)",
+    "MDVP:Flo(Hz)",
+    "MDVP:Jitter(%)",
+    "MDVP:Jitter(Abs)",
+    "MDVP:RAP",
+    "MDVP:PPQ",
+    "Jitter:DDP",
+    "MDVP:Shimmer",
+    "MDVP:Shimmer(dB)",
+    "Shimmer:APQ3",
+    "Shimmer:APQ5",
+    "MDVP:APQ",
+    "Shimmer:DDA",
+    "NHR",
+    "HNR",
+    "RPDE",
+    "DFA",
+    "spread1",
+    "spread2",
+    "D2",
+    "PPE"
+  ],
+  "basic_features": [
+    "MDVP:Fo(Hz)",
+    "MDVP:Fhi(Hz)",
+    "MDVP:Flo(Hz)",
+    "MDVP:Jitter(%)",
+    "MDVP:Shimmer",
+    "NHR",
+    "HNR"
+  ],
+  "feature_ranges": {
+    "MDVP:Fo(Hz)": {
+      "min": 88.333,
+      "p1": 94.86688,
+      "p99": 245.9267,
+      "max": 260.105
+    },
+    "MDVP:Fhi(Hz)": {
+      "min": 102.145,
+      "p1": 107.3904,
+      "p99": 586.68406,
+      "max": 592.03
+    },
+    "MDVP:Flo(Hz)": {
+      "min": 65.476,
+      "p1": 65.78008,
+      "p99": 232.77220000000003,
+      "max": 239.17
+    },
+    "MDVP:Jitter(%)": {
+      "min": 0.00168,
+      "p1": 0.0017775999999999998,
+      "p99": 0.030167600000000003,
+      "max": 0.03316
+    },
+    "MDVP:Jitter(Abs)": {
+      "min": 7e-06,
+      "p1": 9e-06,
+      "p99": 0.00016360000000000015,
+      "max": 0.00026
+    },
+    "MDVP:RAP": {
+      "min": 0.00068,
+      "p1": 0.0007594,
+      "p99": 0.0180324,
+      "max": 0.02144
+    },
+    "MDVP:PPQ": {
+      "min": 0.00092,
+      "p1": 0.0009976,
+      "p99": 0.0163226,
+      "max": 0.01958
+    },
+    "Jitter:DDP": {
+      "min": 0.00204,
+      "p1": 0.0022876,
+      "p99": 0.05410720000000001,
+      "max": 0.06433
+    },
+    "MDVP:Shimmer": {
+      "min": 0.00954,
+      "p1": 0.0101158,
+      "p99": 0.09192460000000001,
+      "max": 0.11908
+    },
+    "MDVP:Shimmer(dB)": {
+      "min": 0.085,
+      "p1": 0.08875999999999999,
+      "p99": 0.9352800000000002,
+      "max": 1.302
+    },
+    "Shimmer:APQ3": {
+      "min": 0.00455,
+      "p1": 0.0046894,
+      "p99": 0.05369580000000001,
+      "max": 0.05647
+    },
+    "Shimmer:APQ5": {
+      "min": 0.0057,
+      "p1": 0.005816399999999999,
+      "p99": 0.054338000000000004,
+      "max": 0.0794
+    },
+    "MDVP:APQ": {
+      "min": 0.00719,
+      "p1": 0.0075984,
+      "p99": 0.08347400000000002,
+      "max": 0.13778
+    },
+    "Shimmer:DDA": {
+      "min": 0.01364,
+      "p1": 0.0140582,
+      "p99": 0.161088,
+      "max": 0.16942
+    },
+    "NHR": {
+      "min": 0.00065,
+      "p1": 0.0011618000000000002,
+      "p99": 0.21966020000000008,
+      "max": 0.31482
+    },
+    "HNR": {
+      "min": 8.441,
+      "p1": 9.41408,
+      "p99": 31.78912,
+      "max": 33.047
+    },
+    "RPDE": {
+      "min": 0.25657,
+      "p1": 0.27605824,
+      "p99": 0.6717231800000001,
+      "max": 0.685151
+    },
+    "DFA": {
+      "min": 0.574282,
+      "p1": 0.60405458,
+      "p99": 0.8235791,
+      "max": 0.825288
+    },
+    "spread1": {
+      "min": -7.964984,
+      "p1": -7.70065106,
+      "p99": -2.92400162,
+      "max": -2.434031
+    },
+    "spread2": {
+      "min": 0.006274,
+      "p1": 0.0545547,
+      "p99": 0.41593208000000004,
+      "max": 0.450493
+    },
+    "D2": {
+      "min": 1.423287,
+      "p1": 1.5426689599999999,
+      "p99": 3.32334978,
+      "max": 3.671155
+    },
+    "PPE": {
+      "min": 0.044539,
+      "p1": 0.05752186,
+      "p99": 0.45488972,
+      "max": 0.527367
+    }
+  }
+}

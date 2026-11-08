@@ -1,0 +1,11 @@
+rank,feature,mean_abs_shap,family,note
+1,PPE,0.7229275703430176,nonlinear f0 variation,Pitch period entropy: designed to be robust to pitch-tracking errors and to normal f0 variation.
+2,spread2,0.7213582992553711,nonlinear f0 variation,"Nonlinear f0-variation measure; plausible, less interpretable."
+3,MDVP:Fhi(Hz),0.6574559211730957,pitch level,Max f0: sex/age-dependent and sensitive to pitch-tracking errors.
+4,spread1,0.5753529071807861,nonlinear f0 variation,Nonlinear f0-variation measure: plausibly dysphonia-related; strongly correlated with PPE.
+5,MDVP:Fo(Hz),0.49565163254737854,pitch level,"Mean f0 depends strongly on sex and age, which UCI does not provide: confounder-prone."
+6,D2,0.4523297846317291,nonlinear dynamics,Correlation dimension; hard to interpret clinically.
+7,DFA,0.4206444025039673,nonlinear dynamics,Fractal scaling of the signal; hard to interpret clinically.
+8,MDVP:RAP,0.36426442861557007,f0 perturbation,Short-term jitter; plausible but recording-sensitive.
+9,NHR,0.2857053279876709,noise ratio,Noise-to-harmonics: reflects breathiness but also room/microphone noise (artifact-prone).
+10,MDVP:Shimmer(dB),0.19156679511070251,amplitude perturbation,Shimmer in dB; same caveats.

@@ -1,0 +1,52 @@
+{
+  "n_recordings": 195,
+  "n_subjects": 32,
+  "subjects_per_class": {
+    "0": 8,
+    "1": 24
+  },
+  "recordings_per_class": {
+    "0": 48,
+    "1": 147
+  },
+  "recordings_per_subject_min_max": [
+    6,
+    7
+  ],
+  "subjects_with_mixed_labels": 0,
+  "subjects_listed": [
+    "S01",
+    "S02",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S10",
+    "S13",
+    "S16",
+    "S17",
+    "S18",
+    "S19",
+    "S20",
+    "S21",
+    "S22",
+    "S24",
+    "S25",
+    "S26",
+    "S27",
+    "S31",
+    "S32",
+    "S33",
+    "S34",
+    "S35",
+    "S37",
+    "S39",
+    "S42",
+    "S43",
+    "S44",
+    "S49",
+    "S50"
+  ],
+  "note": "UCI describes 31 people (23 PD); the file contains the number of distinct subject codes reported here. Counts are measured, not assumed."
+}
